@@ -1,14 +1,14 @@
 import type { MetaFunction } from 'react-router'
 
 export const meta: MetaFunction = () => [
-  { title: "Home | Ryo's Portfolio" },
-  { name: 'description', content: 'Home' },
+  { title: "About | Ryo's Portfolio" },
+  { name: 'description', content: 'About' },
 ]
 
-export default function Home() {
+export default function About() {
   return (
     <>
-      <div>home</div>
+      <div>about</div>
       <div>aaaa</div>
       <div>aaaa</div>
       <div>aaaa</div>

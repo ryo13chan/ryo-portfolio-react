@@ -1,4 +1,5 @@
 import type { MetaFunction } from 'react-router'
+import { Button } from '~/components/ui/button'
 
 export const meta: MetaFunction = () => [
   { title: "Home | Ryo's Portfolio" },
@@ -8,11 +9,7 @@ export const meta: MetaFunction = () => [
 export default function Home() {
   return (
     <>
-      <div>home</div>
-      <div>aaaa</div>
-      <div>aaaa</div>
-      <div>aaaa</div>
-      <div>aaaa</div>
+      <Button variant="default">ボタン</Button>
     </>
   )
 }

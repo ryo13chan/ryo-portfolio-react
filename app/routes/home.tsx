@@ -9,7 +9,9 @@ export const meta: MetaFunction = () => [
 export default function Home() {
   return (
     <>
-      <Button variant="default">ボタン</Button>
+      <div className="h-screen">
+        <Button variant="default">ボタン</Button>
+      </div>
     </>
   )
 }

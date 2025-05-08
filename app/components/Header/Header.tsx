@@ -1,10 +1,11 @@
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
-import { Link } from 'react-router'
+import { Link, NavLink } from 'react-router'
+import { Badge } from '~/components/Badge'
 import { ModeToggle } from '~/components/ModeToggle'
 import { MyAvatar } from '~/components/MyAvatar'
+import { cn } from '~/lib/utils'
 import type { CommitData } from '~/types/git'
-import { Badge } from './Badge'
 
 //  1週間以内のcommitか
 const isRecentCommit = (date: string) => {
@@ -12,6 +13,13 @@ const isRecentCommit = (date: string) => {
   const now = dayjs()
   return commitDate.isAfter(now.subtract(7, 'day'))
 }
+
+// メニュー一覧
+const menus = [
+  { to: '/about', label: 'About' },
+  { to: '/works', label: 'Works' },
+  { to: '/blog', label: 'Blog' },
+]
 
 export const Header = () => {
   const [commitData, setCommitData] = useState<CommitData | null>(null)
@@ -34,7 +42,7 @@ export const Header = () => {
           <MyAvatar />
         </Link>
         {commitData && (
-          <div className="flex flex-col gap-1">
+          <div className="hidden md:flex flex-col gap-1">
             <div className="flex items-center gap-2">
               <span>
                 {dayjs(commitData.commit.author.date).format('YYYY-MM-DD')}
@@ -43,7 +51,12 @@ export const Header = () => {
                 <Badge>New</Badge>
               )}
             </div>
-            <a href={commitData.html_url} target="_blank" rel="noreferrer">
+            <a
+              href={commitData.html_url}
+              target="_blank"
+              rel="noreferrer"
+              className="hover:underline"
+            >
               {commitData.commit.message}
             </a>
           </div>
@@ -52,15 +65,16 @@ export const Header = () => {
       <div className="flex items-center gap-8">
         <nav>
           <ul className="flex gap-8">
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/works">Works</Link>
-            </li>
-            <li>
-              <Link to="/blog">Blog</Link>
-            </li>
+            {menus.map((menu) => (
+              <li key={menu.to}>
+                <NavLink
+                  to={menu.to}
+                  className={({ isActive }) => cn({ 'font-bold': isActive })}
+                >
+                  {menu.label}
+                </NavLink>
+              </li>
+            ))}
           </ul>
         </nav>
         <ModeToggle />

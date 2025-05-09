@@ -1,4 +1,3 @@
-import { action } from '@storybook/addon-actions'
 import type { Meta, StoryObj } from '@storybook/react'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from './Button'
@@ -42,7 +41,7 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {}
 export const Variant: Story = {
-  render: (args) => (
+  render: () => (
     <div className="flex flex-col items-start gap-4">
       <Button variant="default">Default</Button>
       <Button variant="secondary">Secondary</Button>
@@ -54,7 +53,7 @@ export const Variant: Story = {
   ),
 }
 export const Size: Story = {
-  render: (args) => (
+  render: () => (
     <div className="flex flex-col items-start gap-4">
       <Button size="icon">Icon</Button>
       <Button size="sm">Small</Button>
@@ -64,7 +63,7 @@ export const Size: Story = {
   ),
 }
 export const withIcon: Story = {
-  render: (args) => (
+  render: () => (
     <div className="flex flex-col items-start gap-4">
       <Button variant="outline">
         <ChevronLeft />

@@ -1,5 +1,5 @@
 import type { MetaFunction } from 'react-router'
-import { Button } from '~/components/ui/button'
+import { Button } from '~/components/Button'
 
 export const meta: MetaFunction = () => [
   { title: "Home | Ryo's Portfolio" },

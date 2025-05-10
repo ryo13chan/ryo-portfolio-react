@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { Button } from '~/components/Button'
+import { Button } from '~/components/base/Button'
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -13,10 +13,10 @@ import {
   DropdownMenuSubContent,
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
-} from '~/components/DropdownMenu'
+} from './DropdownMenu'
 
 const meta: Meta<typeof DropdownMenu> = {
-  title: 'DropdownMenu',
+  title: 'base components/DropdownMenu',
   component: DropdownMenu,
 } satisfies Meta<typeof DropdownMenu>
 

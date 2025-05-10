@@ -1,9 +1,9 @@
 import type { Meta, StoryObj } from '@storybook/react'
 import Icon from '~/assets/images/icon.jpg'
-import { Avatar, AvatarFallback, AvatarImage } from '~/components/Avatar'
+import { Avatar, AvatarFallback, AvatarImage } from './Avatar'
 
 const meta: Meta<typeof Avatar> = {
-  title: 'Avatar',
+  title: 'base components/Avatar',
   component: Avatar,
 } satisfies Meta<typeof Avatar>
 

@@ -1,9 +1,9 @@
 import dayjs from 'dayjs'
 import { useEffect, useState } from 'react'
 import { Link, NavLink } from 'react-router'
-import { Badge } from '~/components/Badge'
-import { ModeToggle } from '~/components/ModeToggle'
-import { MyAvatar } from '~/components/MyAvatar'
+import { Badge } from '~/components/base/Badge'
+import { ModeToggle } from '~/components/feature/ModeToggle'
+import { MyAvatar } from '~/components/feature/MyAvatar'
 import { cn } from '~/lib/utils'
 import type { CommitData } from '~/types/git'
 

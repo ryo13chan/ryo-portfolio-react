@@ -1,5 +1,5 @@
 import Icon from '~/assets/images/icon.jpg'
-import { Avatar, AvatarFallback, AvatarImage } from '~/components/Avatar'
+import { Avatar, AvatarFallback, AvatarImage } from '~/components/base/Avatar'
 
 export const MyAvatar = () => {
   return (

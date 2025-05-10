@@ -1,20 +1,5 @@
-import dayjs from 'dayjs'
 import { Github, Twitter } from 'lucide-react'
-import { useEffect, useState } from 'react'
-import { Link, NavLink } from 'react-router'
-import { Badge } from '~/components/Badge'
-import { Button } from '~/components/Button'
-import { ModeToggle } from '~/components/ModeToggle'
-import { MyAvatar } from '~/components/MyAvatar'
-import { cn } from '~/lib/utils'
-import type { CommitData } from '~/types/git'
-
-// メニュー一覧
-const menus = [
-  { to: '/about', label: 'About' },
-  { to: '/works', label: 'Works' },
-  { to: '/blog', label: 'Blog' },
-]
+import { Button } from '~/components/base/Button'
 
 export const Footer = () => {
   return (

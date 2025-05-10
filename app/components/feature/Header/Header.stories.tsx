@@ -3,7 +3,7 @@ import { BrowserRouter } from 'react-router'
 import { Header } from './Header'
 
 const meta: Meta<typeof Header> = {
-  title: 'Header',
+  title: 'feature components/Header',
   component: Header,
   decorators: [
     (Story) => (

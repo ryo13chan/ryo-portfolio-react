@@ -3,7 +3,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 import { Button } from './Button'
 
 const meta: Meta<typeof Button> = {
-  title: 'Button',
+  title: 'base components/Button',
   component: Button,
   argTypes: {
     onClick: { action: true },

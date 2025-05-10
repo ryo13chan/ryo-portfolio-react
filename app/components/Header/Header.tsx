@@ -36,7 +36,7 @@ export const Header = () => {
   }, [])
 
   return (
-    <header className="flex justify-between items-center h-20 px-4 border-b sticky top-0 bg-white dark:bg-gray-950">
+    <header className="flex justify-between items-center h-20 px-4 border-b sticky top-0 bg-white dark:bg-neutral-950">
       <div className="flex items-center gap-8">
         <Link to="/">
           <MyAvatar />

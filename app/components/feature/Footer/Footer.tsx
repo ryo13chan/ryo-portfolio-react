@@ -3,7 +3,7 @@ import { Button } from '~/components/base/Button'
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col items-center gap-2 py-4">
+    <footer className="flex flex-col items-center gap-2 h-20">
       <div className="flex gap-4">
         <a href="https://github.com/ryo13chan" target="_blank" rel="noreferrer">
           <Button variant="outline" size="icon">

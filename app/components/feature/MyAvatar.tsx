@@ -1,9 +1,14 @@
 import Icon from '~/assets/images/icon.jpg'
 import { Avatar, AvatarFallback, AvatarImage } from '~/components/base/Avatar'
+import { cn } from '~/lib/utils'
 
-export const MyAvatar = () => {
+type Props = {
+  className?: string
+}
+
+export const MyAvatar = ({ className }: Props) => {
   return (
-    <Avatar className="size-12">
+    <Avatar className={cn('size-12', className)}>
       <AvatarImage src={Icon} />
       <AvatarFallback>Ryo</AvatarFallback>
     </Avatar>

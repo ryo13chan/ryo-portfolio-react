@@ -1,4 +1,5 @@
 import type { MetaFunction } from 'react-router'
+import { Heading } from '~/components/base/Heading'
 import { MyAvatar } from '~/components/feature/MyAvatar'
 
 export const meta: MetaFunction = () => [
@@ -9,12 +10,10 @@ export const meta: MetaFunction = () => [
 export default function Home() {
   return (
     <>
-      <div className="flex items-center justify-center min-h-[calc(100vh-5rem-5rem)]">
+      <div className="flex items-center justify-center min-h-[calc(100vh-5rem-5rem-2rem)]">
         <div className="flex flex-col lg:flex-row items-center gap-8 p-8">
           <div>
-            <h1 className="text-5xl font-bold mb-8">
-              Welcome to Ryo's Portfolio!
-            </h1>
+            <Heading text="Welcome to Ryo's Portfolio!" />
             <div className="leading-10">
               はじめまして。
               <br />

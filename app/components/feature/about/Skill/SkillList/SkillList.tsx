@@ -1,12 +1,16 @@
-import { SkillBadge } from '~/components/feature/about/Skill'
+import { SkillCard } from '~/components/feature/about/Skill/SkillCard'
 
 export const SkillList = () => {
   return (
-    <>
-      <div>Skill List</div>
-      <SkillBadge name="javascript" />
-      <SkillBadge name="typescript" />
-      <SkillBadge name="vuejs" />
-    </>
+    <div className="grid grid-cols-1 gap-4">
+      <SkillCard
+        title="Frontend"
+        names={['javascript', 'typescript', 'vuejs']}
+      />
+      <SkillCard
+        title="Frontend"
+        names={['javascript', 'typescript', 'vuejs']}
+      />
+    </div>
   )
 }

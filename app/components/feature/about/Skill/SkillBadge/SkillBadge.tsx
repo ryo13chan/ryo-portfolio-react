@@ -1,6 +1,6 @@
 import type { FC } from 'react'
+import { type SkillName, skills } from '~/components/feature/about/Skill/skill'
 import { Badge } from '~/components/ui/badge'
-import { type SkillName, skills } from './skill'
 
 type Props = {
   name: SkillName

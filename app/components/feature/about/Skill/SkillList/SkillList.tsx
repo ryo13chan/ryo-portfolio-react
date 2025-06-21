@@ -5,11 +5,74 @@ export const SkillList = () => {
     <div className="grid grid-cols-1 gap-4">
       <SkillCard
         title="Frontend"
-        names={['javascript', 'typescript', 'vuejs']}
+        names={[
+          'javascript',
+          'typescript',
+          'vuejs',
+          'vuetify',
+          'nuxtjs',
+          'react',
+          'reactrouter',
+          'nextjs',
+          'svelte',
+          'jquery',
+          'html5',
+          'css3',
+          'tailwindcss',
+          'sass',
+          'bootstrap',
+          'materialui',
+          'eslint',
+          'jest',
+          'vitest',
+        ]}
       />
       <SkillCard
-        title="Frontend"
-        names={['javascript', 'typescript', 'vuejs']}
+        title="Backend"
+        names={[
+          'php',
+          'laravel',
+          'cakephp',
+          'phalcon',
+          'ruby',
+          'rails',
+          'java',
+        ]}
+      />
+      <SkillCard title="Mobile" names={['flutter', 'dart']} />
+      <SkillCard
+        title="Infrastructure"
+        names={[
+          'mysql',
+          'postgresql',
+          'oracle',
+          'firebase',
+          'docker',
+          'aws',
+          'vagrant',
+          'apache',
+          'nginx',
+          'redis',
+          'vercel',
+          'netlify',
+        ]}
+      />
+      <SkillCard
+        title="Tools"
+        names={[
+          'git',
+          'github',
+          'bitbucket',
+          'slack',
+          'jira',
+          'confluence',
+          'trello',
+          'notion',
+          'vscode',
+          'xcode',
+          'figma',
+          'sourcetree',
+        ]}
       />
     </div>
   )

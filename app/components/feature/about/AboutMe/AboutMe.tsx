@@ -19,7 +19,6 @@ export const AboutMe: FC<Props> = ({ className }) => {
     職業: "Webエンジニア"
     得意: "フロントエンド開発"
     その他: ["フリーランス", "リモートワーク"]
-    ]
   }
 }
 `

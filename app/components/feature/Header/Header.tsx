@@ -17,7 +17,7 @@ const isRecentCommit = (date: string) => {
 // メニュー一覧
 const menus = [
   { to: '/about', label: 'About' },
-  { to: '/works', label: 'Works' },
+  // { to: '/works', label: 'Works' },
   { to: '/tools', label: 'Tools' },
   { to: '/blog', label: 'Blog' },
 ]

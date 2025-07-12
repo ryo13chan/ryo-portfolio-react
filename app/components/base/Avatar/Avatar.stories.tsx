@@ -1,4 +1,4 @@
-import type { Meta, StoryObj } from '@storybook/react'
+import type { Meta, StoryObj } from '@storybook/react-vite'
 import Icon from '~/assets/images/icon.jpg'
 import { Avatar, AvatarFallback, AvatarImage } from './Avatar'
 

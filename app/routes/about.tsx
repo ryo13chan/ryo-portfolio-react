@@ -7,6 +7,7 @@ import {
 } from '~/components/base/Accordion'
 import { Heading } from '~/components/base/Heading'
 import { AboutMe } from '~/components/feature/about/AboutMe'
+import { Career } from '~/components/feature/about/Career'
 import { SkillList } from '~/components/feature/about/Skill'
 import { Timeline } from '~/components/feature/about/Timeline'
 
@@ -19,10 +20,11 @@ export default function About() {
   return (
     <div className="max-w-4xl mx-auto">
       <Heading text="About" />
-      <AboutMe className="!mb-8" />
+      <AboutMe className="!mb-12" />
       <Heading text="Timeline" level={2} />
-      <Timeline className="mb-8" />
+      <Timeline className="mb-12" />
       <Heading text="Career" level={2} />
+      <Career className="mb-8" />
       {/* TODO: 経歴のリスト  */}
       {/* TODO:  Gitの草*/}
       <Accordion type="single" collapsible>

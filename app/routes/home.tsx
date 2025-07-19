@@ -13,12 +13,12 @@ export default function Home() {
       <div className="flex items-center justify-center min-h-[calc(100vh-5rem-5rem-2rem)]">
         <div className="flex flex-col lg:flex-row items-center gap-8 p-8">
           <div>
-            <Heading text="Welcome to Ryo's Portfolio!" />
+            <Heading text="Welcome to Ryo's Portfolio!" className="text-6xl" />
             <div className="leading-10">
               はじめまして。
               <br />
               Webフロントエンドエンジニアの
-              <span className="font-bold text-2xl">Ryo</span>
+              <span className="font-bold text-3xl px-2">Ryo</span>
               と申します。
               <br />
               当サイトはエンジニアとしてのポートフォリオです。

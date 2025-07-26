@@ -1,6 +1,5 @@
 import type { FC } from 'react'
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import materialOceanic from 'react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic'
+import { Card, CardContent } from '~/components/base/Card'
 import { cn } from '~/lib/utils'
 
 type Props = {
@@ -24,12 +23,10 @@ export const AboutMe: FC<Props> = ({ className }) => {
 `
 
   return (
-    <SyntaxHighlighter
-      language="json"
-      style={materialOceanic}
-      className={cn('rounded-2xl', className)}
-    >
-      {codeString}
-    </SyntaxHighlighter>
+    <Card className={cn('', className)}>
+      <CardContent>
+        <pre className="rounded-2xl">{codeString}</pre>
+      </CardContent>
+    </Card>
   )
 }

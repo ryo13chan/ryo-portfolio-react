@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter'
-import { materialOceanic } from 'react-syntax-highlighter/dist/cjs/styles/prism'
+import materialOceanic from 'react-syntax-highlighter/dist/cjs/styles/prism/material-oceanic'
 import { cn } from '~/lib/utils'
 
 type Props = {

@@ -1,5 +1,8 @@
-import { addDays, format, formatDuration, intervalToDuration } from 'date-fns'
-import { ja } from 'date-fns/locale'
+import { addDays } from 'date-fns/addDays'
+import { format } from 'date-fns/format'
+import { formatDuration } from 'date-fns/formatDuration'
+import { intervalToDuration } from 'date-fns/intervalToDuration'
+import { ja } from 'date-fns/locale/ja'
 import type { FC } from 'react'
 import {
   Accordion,

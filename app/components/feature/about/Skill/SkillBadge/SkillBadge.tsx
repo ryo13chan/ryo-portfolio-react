@@ -19,6 +19,9 @@ export const SkillBadge: FC<Props> = ({ name }) => {
         src={iconUrl}
         aria-label={skill.label}
         className="w-8 h-auto rounded-xl mr-1"
+        loading="lazy"
+        width="32"
+        height="32"
       />
       {skill.label}
     </Badge>

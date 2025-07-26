@@ -66,3 +66,8 @@ app/
 - サーバーサイドレンダリングがデフォルトで有効
 - Viteビルドプロセスでアセット最適化
 - 本番デプロイ用のDockerマルチステージビルド
+
+## よく参照するドキュメント
+- React Router: https://reactrouter.com/
+- Tailwind CSS: https://tailwindcss.com/
+- shadcn/ui: https://ui.shadcn.com/

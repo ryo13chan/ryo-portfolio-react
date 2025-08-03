@@ -2,7 +2,7 @@ import { Outlet } from 'react-router'
 import { Footer } from '~/components/feature/Footer'
 import { Header } from '~/components/feature/Header'
 
-export default function layout() {
+export default function index() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />

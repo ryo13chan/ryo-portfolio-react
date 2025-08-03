@@ -11,15 +11,16 @@ import { Career } from '~/components/feature/about/Career'
 import { SkillList } from '~/components/feature/about/Skill'
 import { Timeline } from '~/components/feature/about/Timeline'
 
+const title = 'About'
 export const meta: MetaFunction = () => [
-  { title: "About | Ryo's Portfolio" },
-  { name: 'description', content: 'About画面' },
+  { title: `${title} | Ryo's Portfolio` },
+  { name: 'description', content: 'About Page' },
 ]
 
 export default function About() {
   return (
     <div className="max-w-4xl mx-auto">
-      <Heading text="About" />
+      <Heading text={title} />
       <AboutMe className="!mb-12" />
       <Heading text="Timeline" level={2} />
       <Timeline className="mb-12" />

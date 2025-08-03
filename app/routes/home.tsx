@@ -4,7 +4,7 @@ import { MyAvatar } from '~/components/feature/MyAvatar'
 
 export const meta: MetaFunction = () => [
   { title: "Home | Ryo's Portfolio" },
-  { name: 'description', content: 'ホーム画面' },
+  { name: 'description', content: 'Home Page' },
 ]
 
 export default function Home() {
